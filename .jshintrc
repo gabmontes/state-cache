@@ -1,9 +1,16 @@
 {
-    "browser": true,
+	"curly": true,
     "forin": true,
+    "futurehostile": true,
     "latedef": "nofunc",
-    "newcap": true,
-    "quotmark": "single",
+    "singleGroups": true,
     "undef": true,
     "unused": true,
+
+    "browser": true,
+
+    "predef": ["require", "define"],
+
+    "quotmark": "single",
+    "newcap": true
 }
