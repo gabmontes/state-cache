@@ -1,6 +1,20 @@
 {
   "name": "state-cache",
-  "private": true,
+  "description": "A simple app state cache and persistence that uses both memory and localStorage",
+  "main": "index.js",
+  "moduleType": "amd",
+  "license": "WTFPL",
+  "ignore": [
+  	".*",
+  	"bower_components",
+  	"test"
+  ],
+  "keywords": [
+  	"state",
+  	"cache",
+  	"storage",
+  	"localStorage"
+  ],
   "devDependencies": {
     "mocha": "~2.2.5",
     "chai": "~2.3.0",
