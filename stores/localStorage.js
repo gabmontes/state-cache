@@ -21,6 +21,9 @@ define([], function () {
 	};
 
 	LSStore.prototype.removeItem = function(key) {
+		if (!localStorage.getItem(key)) {
+			return false;
+		}
 		localStorage.removeItem(key);
 		return true;
 	};

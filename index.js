@@ -20,7 +20,7 @@ define([
 	};
 
 	StateCache.prototype.setItem = function(key, value) {
-		this.stores.reduce(function (stored, store) {
+		return this.stores.reduce(function (stored, store) {
 			return stored || store.setItem(key, value);
 		}, false);
 	};
@@ -32,9 +32,11 @@ define([
 	};
 
 	StateCache.prototype.removeItem = function(key) {
-		this.stores.map(function (store) {
-			store.removeItem(key);
-		});
+		return this.stores.map(function (store) {
+			return store.removeItem(key);
+		}).reduce(function (removed, state) {
+			return removed || state;
+		}, false);
 	};
 
 	return StateCache;
