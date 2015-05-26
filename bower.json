@@ -1,0 +1,9 @@
+{
+  "name": "state-cache",
+  "private": true,
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "chai": "~2.3.0",
+    "requirejs": "~2.1.17"
+  }
+}

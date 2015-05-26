@@ -1,0 +1,9 @@
+{
+    "browser": true,
+    "forin": true,
+    "latedef": "nofunc",
+    "newcap": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true,
+}
